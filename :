@@ -1,0 +1,572 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#	modified:   CustomFlashCard.xcodeproj/project.pbxproj
+#	new file:   CustomFlashCard.xcodeproj/xcshareddata/xcschemes/CustomFlashCard.xcscheme
+#	modified:   CustomFlashCard.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/xcschememanagement.plist
+#	new file:   CustomFlashCard.xcworkspace/contents.xcworkspacedata
+#	renamed:    CustomFlashCard/CustomFlashCard.xcdatamodeld/.xccurrentversion -> CustomFlashCard.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+#	new file:   CustomFlashCard.xcworkspace/xcuserdata/macbook.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+#	deleted:    CustomFlashCard/AppDelegate.swift
+#	deleted:    CustomFlashCard/Base.lproj/Main.storyboard
+#	new file:   CustomFlashCard/Controllers/AddCategoryViewController.swift
+#	new file:   CustomFlashCard/Controllers/AllCardsCell.swift
+#	new file:   CustomFlashCard/Controllers/AllCardsViewController.swift
+#	new file:   CustomFlashCard/Controllers/CardFormViewController.swift
+#	new file:   CustomFlashCard/Controllers/CardViewController.swift
+#	new file:   CustomFlashCard/Controllers/CreateViewController.swift
+#	renamed:    CustomFlashCard/SecondViewController.swift -> CustomFlashCard/Controllers/SecondViewController.swift
+#	deleted:    CustomFlashCard/CustomFlashCard.xcdatamodeld/CustomFlashCard.xcdatamodel/contents
+#	deleted:    CustomFlashCard/FirstViewController.swift
+#	new file:   CustomFlashCard/Models/Card.swift
+#	new file:   CustomFlashCard/Models/Category.swift
+#	new file:   CustomFlashCard/Storyboards/AddCard.storyboard
+#	new file:   CustomFlashCard/Storyboards/AddCategory.storyboard
+#	new file:   CustomFlashCard/Storyboards/AllCardsCell.xib
+#	new file:   CustomFlashCard/Storyboards/Base.lproj/Main.storyboard
+#	new file:   CustomFlashCard/Storyboards/CardView.storyboard
+#	new file:   CustomFlashCard/Supporting Files/AppDelegate.swift
+#	renamed:    CustomFlashCard/Assets.xcassets/AppIcon.appiconset/Contents.json -> CustomFlashCard/Supporting Files/Assets.xcassets/AppIcon.appiconset/Contents.json
+#	new file:   CustomFlashCard/Supporting Files/Assets.xcassets/BgColor.colorset/Contents.json
+#	renamed:    CustomFlashCard/Assets.xcassets/Contents.json -> CustomFlashCard/Supporting Files/Assets.xcassets/Contents.json
+#	new file:   CustomFlashCard/Supporting Files/Assets.xcassets/FontColor-1.colorset/Contents.json
+#	new file:   CustomFlashCard/Supporting Files/Assets.xcassets/FontColor-2.colorset/Contents.json
+#	new file:   CustomFlashCard/Supporting Files/Assets.xcassets/FontColor.colorset/Contents.json
+#	renamed:    CustomFlashCard/Assets.xcassets/first.imageset/Contents.json -> CustomFlashCard/Supporting Files/Assets.xcassets/first.imageset/Contents.json
+#	renamed:    CustomFlashCard/Assets.xcassets/first.imageset/first.pdf -> CustomFlashCard/Supporting Files/Assets.xcassets/first.imageset/first.pdf
+#	renamed:    CustomFlashCard/Assets.xcassets/second.imageset/Contents.json -> CustomFlashCard/Supporting Files/Assets.xcassets/second.imageset/Contents.json
+#	renamed:    CustomFlashCard/Assets.xcassets/second.imageset/second.pdf -> CustomFlashCard/Supporting Files/Assets.xcassets/second.imageset/second.pdf
+#	new file:   CustomFlashCard/Supporting Files/Assets.xcassets/tvBackground-1.colorset/Contents.json
+#	new file:   CustomFlashCard/Supporting Files/Assets.xcassets/tvBackground.colorset/Contents.json
+#	renamed:    CustomFlashCard/Base.lproj/LaunchScreen.storyboard -> CustomFlashCard/Supporting Files/Base.lproj/LaunchScreen.storyboard
+#	renamed:    CustomFlashCard/Info.plist -> CustomFlashCard/Supporting Files/Info.plist
+#	renamed:    CustomFlashCard/SceneDelegate.swift -> CustomFlashCard/Supporting Files/SceneDelegate.swift
+#	new file:   Podfile
+#	new file:   Podfile.lock
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardManager.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQTextView/IQTextView.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/Contents.json
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowDown.imageset/Contents.json
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowDown.imageset/IQButtonBarArrowDown@2x.png
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowDown.imageset/IQButtonBarArrowDown@3x.png
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowLeft.imageset/Contents.json
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowLeft.imageset/IQButtonBarArrowLeft@2x.png
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowLeft.imageset/IQButtonBarArrowLeft@3x.png
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowRight.imageset/Contents.json
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowRight.imageset/IQButtonBarArrowRight@2x.png
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowRight.imageset/IQButtonBarArrowRight@3x.png
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowUp.imageset/Contents.json
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowUp.imageset/IQButtonBarArrowUp@2x.png
+#	new file:   Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManagerSwift.xcassets/IQButtonBarArrowUp.imageset/IQButtonBarArrowUp@3x.png
+#	new file:   Pods/IQKeyboardManagerSwift/LICENSE.md
+#	new file:   Pods/IQKeyboardManagerSwift/README.md
+#	new file:   Pods/Manifest.lock
+#	new file:   Pods/Pods.xcodeproj/project.pbxproj
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/IQKeyboardManagerSwift-IQKeyboardManagerSwift.xcscheme
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/IQKeyboardManagerSwift.xcscheme
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/Pods-CustomFlashCard-CustomFlashCardUITests.xcscheme
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/Pods-CustomFlashCard.xcscheme
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/Pods-CustomFlashCardTests.xcscheme
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/Realm.xcscheme
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/RealmSwift.xcscheme
+#	new file:   Pods/Pods.xcodeproj/xcuserdata/macbook.xcuserdatad/xcschemes/xcschememanagement.plist
+#	new file:   Pods/Realm/LICENSE
+#	new file:   Pods/Realm/README.md
+#	new file:   Pods/Realm/Realm/NSError+RLMSync.m
+#	new file:   Pods/Realm/Realm/ObjectStore/src/binding_callback_thread_observer.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/collection_notifications.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/apple/external_commit_helper.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/apple/keychain_helper.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/collection_change_builder.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/collection_notifier.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/list_notifier.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/object_notifier.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/primitive_list_notifier.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/realm_coordinator.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/results_notifier.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/transact_log_handler.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/impl/weak_realm_notifier.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/index_set.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/list.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/object.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/object_schema.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/object_store.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/placeholder.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/results.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/schema.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/shared_realm.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/async_open_task.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/impl/apple/network_reachability_observer.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/impl/apple/system_configuration.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/impl/sync_file.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/impl/sync_metadata.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/impl/work_queue.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/partial_sync.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/sync_config.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/sync_manager.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/sync_permission.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/sync_session.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/sync/sync_user.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/thread_safe_reference.cpp
+#	new file:   Pods/Realm/Realm/ObjectStore/src/util/uuid.cpp
+#	new file:   Pods/Realm/Realm/RLMAccessor.mm
+#	new file:   Pods/Realm/Realm/RLMAnalytics.mm
+#	new file:   Pods/Realm/Realm/RLMArray.mm
+#	new file:   Pods/Realm/Realm/RLMClassInfo.mm
+#	new file:   Pods/Realm/Realm/RLMCollection.mm
+#	new file:   Pods/Realm/Realm/RLMConstants.m
+#	new file:   Pods/Realm/Realm/RLMJSONModels.m
+#	new file:   Pods/Realm/Realm/RLMListBase.mm
+#	new file:   Pods/Realm/Realm/RLMManagedArray.mm
+#	new file:   Pods/Realm/Realm/RLMMigration.mm
+#	new file:   Pods/Realm/Realm/RLMNetworkClient.mm
+#	new file:   Pods/Realm/Realm/RLMObject.mm
+#	new file:   Pods/Realm/Realm/RLMObjectBase.mm
+#	new file:   Pods/Realm/Realm/RLMObjectSchema.mm
+#	new file:   Pods/Realm/Realm/RLMObjectStore.mm
+#	new file:   Pods/Realm/Realm/RLMObservation.mm
+#	new file:   Pods/Realm/Realm/RLMOptionalBase.mm
+#	new file:   Pods/Realm/Realm/RLMPredicateUtil.mm
+#	new file:   Pods/Realm/Realm/RLMProperty.mm
+#	new file:   Pods/Realm/Realm/RLMQueryUtil.mm
+#	new file:   Pods/Realm/Realm/RLMRealm+Sync.mm
+#	new file:   Pods/Realm/Realm/RLMRealm.mm
+#	new file:   Pods/Realm/Realm/RLMRealmConfiguration+Sync.mm
+#	new file:   Pods/Realm/Realm/RLMRealmConfiguration.mm
+#	new file:   Pods/Realm/Realm/RLMRealmUtil.mm
+#	new file:   Pods/Realm/Realm/RLMResults.mm
+#	new file:   Pods/Realm/Realm/RLMSchema.mm
+#	new file:   Pods/Realm/Realm/RLMSwiftSupport.m
+#	new file:   Pods/Realm/Realm/RLMSyncConfiguration.mm
+#	new file:   Pods/Realm/Realm/RLMSyncCredentials.m
+#	new file:   Pods/Realm/Realm/RLMSyncManager.mm
+#	new file:   Pods/Realm/Realm/RLMSyncPermission.mm
+#	new file:   Pods/Realm/Realm/RLMSyncSession.mm
+#	new file:   Pods/Realm/Realm/RLMSyncSessionRefreshHandle.mm
+#	new file:   Pods/Realm/Realm/RLMSyncSubscription.mm
+#	new file:   Pods/Realm/Realm/RLMSyncUser.mm
+#	new file:   Pods/Realm/Realm/RLMSyncUtil.mm
+#	new file:   Pods/Realm/Realm/RLMThreadSafeReference.mm
+#	new file:   Pods/Realm/Realm/RLMUpdateChecker.mm
+#	new file:   Pods/Realm/Realm/RLMUtil.mm
+#	new file:   Pods/Realm/Realm/Realm.modulemap
+#	new file:   Pods/Realm/build.sh
+#	new file:   Pods/Realm/core/librealmcore-ios.a
+#	new file:   Pods/Realm/include/NSError+RLMSync.h
+#	new file:   Pods/Realm/include/RLMAccessor.h
+#	new file:   Pods/Realm/include/RLMAccessor.hpp
+#	new file:   Pods/Realm/include/RLMAnalytics.hpp
+#	new file:   Pods/Realm/include/RLMArray.h
+#	new file:   Pods/Realm/include/RLMArray_Private.h
+#	new file:   Pods/Realm/include/RLMArray_Private.hpp
+#	new file:   Pods/Realm/include/RLMClassInfo.hpp
+#	new file:   Pods/Realm/include/RLMCollection.h
+#	new file:   Pods/Realm/include/RLMCollection_Private.h
+#	new file:   Pods/Realm/include/RLMCollection_Private.hpp
+#	new file:   Pods/Realm/include/RLMConstants.h
+#	new file:   Pods/Realm/include/RLMJSONModels.h
+#	new file:   Pods/Realm/include/RLMListBase.h
+#	new file:   Pods/Realm/include/RLMMigration.h
+#	new file:   Pods/Realm/include/RLMMigration_Private.h
+#	new file:   Pods/Realm/include/RLMNetworkClient.h
+#	new file:   Pods/Realm/include/RLMObject.h
+#	new file:   Pods/Realm/include/RLMObjectBase.h
+#	new file:   Pods/Realm/include/RLMObjectBase_Dynamic.h
+#	new file:   Pods/Realm/include/RLMObjectBase_Private.h
+#	new file:   Pods/Realm/include/RLMObjectSchema.h
+#	new file:   Pods/Realm/include/RLMObjectSchema_Private.h
+#	new file:   Pods/Realm/include/RLMObjectSchema_Private.hpp
+#	new file:   Pods/Realm/include/RLMObjectStore.h
+#	new file:   Pods/Realm/include/RLMObject_Private.h
+#	new file:   Pods/Realm/include/RLMObject_Private.hpp
+#	new file:   Pods/Realm/include/RLMObservation.hpp
+#	new file:   Pods/Realm/include/RLMOptionalBase.h
+#	new file:   Pods/Realm/include/RLMPlatform.h
+#	new file:   Pods/Realm/include/RLMPredicateUtil.hpp
+#	new file:   Pods/Realm/include/RLMPrefix.h
+#	new file:   Pods/Realm/include/RLMProperty.h
+#	new file:   Pods/Realm/include/RLMProperty_Private.h
+#	new file:   Pods/Realm/include/RLMProperty_Private.hpp
+#	new file:   Pods/Realm/include/RLMQueryUtil.hpp
+#	new file:   Pods/Realm/include/RLMRealm+Sync.h
+#	new file:   Pods/Realm/include/RLMRealm.h
+#	new file:   Pods/Realm/include/RLMRealmConfiguration+Sync.h
+#	new file:   Pods/Realm/include/RLMRealmConfiguration.h
+#	new file:   Pods/Realm/include/RLMRealmConfiguration_Private.h
+#	new file:   Pods/Realm/include/RLMRealmConfiguration_Private.hpp
+#	new file:   Pods/Realm/include/RLMRealmUtil.hpp
+#	new file:   Pods/Realm/include/RLMRealm_Dynamic.h
+#	new file:   Pods/Realm/include/RLMRealm_Private.h
+#	new file:   Pods/Realm/include/RLMRealm_Private.hpp
+#	new file:   Pods/Realm/include/RLMResults.h
+#	new file:   Pods/Realm/include/RLMResults_Private.h
+#	new file:   Pods/Realm/include/RLMResults_Private.hpp
+#	new file:   Pods/Realm/include/RLMSchema.h
+#	new file:   Pods/Realm/include/RLMSchema_Private.h
+#	new file:   Pods/Realm/include/RLMSchema_Private.hpp
+#	new file:   Pods/Realm/include/RLMSwiftBridgingHeader.h
+#	new file:   Pods/Realm/include/RLMSwiftSupport.h
+#	new file:   Pods/Realm/include/RLMSyncConfiguration.h
+#	new file:   Pods/Realm/include/RLMSyncConfiguration_Private.h
+#	new file:   Pods/Realm/include/RLMSyncConfiguration_Private.hpp
+#	new file:   Pods/Realm/include/RLMSyncCredentials.h
+#	new file:   Pods/Realm/include/RLMSyncManager.h
+#	new file:   Pods/Realm/include/RLMSyncManager_Private.h
+#	new file:   Pods/Realm/include/RLMSyncPermission.h
+#	new file:   Pods/Realm/include/RLMSyncSession.h
+#	new file:   Pods/Realm/include/RLMSyncSessionRefreshHandle.h
+#	new file:   Pods/Realm/include/RLMSyncSessionRefreshHandle.hpp
+#	new file:   Pods/Realm/include/RLMSyncSession_Private.hpp
+#	new file:   Pods/Realm/include/RLMSyncSubscription.h
+#	new file:   Pods/Realm/include/RLMSyncUser.h
+#	new file:   Pods/Realm/include/RLMSyncUser_Private.hpp
+#	new file:   Pods/Realm/include/RLMSyncUtil.h
+#	new file:   Pods/Realm/include/RLMSyncUtil_Private.h
+#	new file:   Pods/Realm/include/RLMSyncUtil_Private.hpp
+#	new file:   Pods/Realm/include/RLMThreadSafeReference.h
+#	new file:   Pods/Realm/include/RLMThreadSafeReference_Private.hpp
+#	new file:   Pods/Realm/include/RLMUpdateChecker.hpp
+#	new file:   Pods/Realm/include/RLMUtil.hpp
+#	new file:   Pods/Realm/include/Realm.h
+#	new file:   Pods/Realm/include/audit.hpp
+#	new file:   Pods/Realm/include/binding_callback_thread_observer.hpp
+#	new file:   Pods/Realm/include/binding_context.hpp
+#	new file:   Pods/Realm/include/collection_notifications.hpp
+#	new file:   Pods/Realm/include/core/realm.hpp
+#	new file:   Pods/Realm/include/core/realm/alloc.hpp
+#	new file:   Pods/Realm/include/core/realm/alloc_slab.hpp
+#	new file:   Pods/Realm/include/core/realm/array.hpp
+#	new file:   Pods/Realm/include/core/realm/array_basic.hpp
+#	new file:   Pods/Realm/include/core/realm/array_basic_tpl.hpp
+#	new file:   Pods/Realm/include/core/realm/array_binary.hpp
+#	new file:   Pods/Realm/include/core/realm/array_blob.hpp
+#	new file:   Pods/Realm/include/core/realm/array_blobs_big.hpp
+#	new file:   Pods/Realm/include/core/realm/array_direct.hpp
+#	new file:   Pods/Realm/include/core/realm/array_integer.hpp
+#	new file:   Pods/Realm/include/core/realm/array_string.hpp
+#	new file:   Pods/Realm/include/core/realm/array_string_long.hpp
+#	new file:   Pods/Realm/include/core/realm/binary_data.hpp
+#	new file:   Pods/Realm/include/core/realm/bptree.hpp
+#	new file:   Pods/Realm/include/core/realm/chunked_binary.hpp
+#	new file:   Pods/Realm/include/core/realm/column.hpp
+#	new file:   Pods/Realm/include/core/realm/column_backlink.hpp
+#	new file:   Pods/Realm/include/core/realm/column_binary.hpp
+#	new file:   Pods/Realm/include/core/realm/column_fwd.hpp
+#	new file:   Pods/Realm/include/core/realm/column_link.hpp
+#	new file:   Pods/Realm/include/core/realm/column_linkbase.hpp
+#	new file:   Pods/Realm/include/core/realm/column_linklist.hpp
+#	new file:   Pods/Realm/include/core/realm/column_mixed.hpp
+#	new file:   Pods/Realm/include/core/realm/column_mixed_tpl.hpp
+#	new file:   Pods/Realm/include/core/realm/column_string.hpp
+#	new file:   Pods/Realm/include/core/realm/column_string_enum.hpp
+#	new file:   Pods/Realm/include/core/realm/column_table.hpp
+#	new file:   Pods/Realm/include/core/realm/column_timestamp.hpp
+#	new file:   Pods/Realm/include/core/realm/column_tpl.hpp
+#	new file:   Pods/Realm/include/core/realm/column_type.hpp
+#	new file:   Pods/Realm/include/core/realm/column_type_traits.hpp
+#	new file:   Pods/Realm/include/core/realm/data_type.hpp
+#	new file:   Pods/Realm/include/core/realm/descriptor.hpp
+#	new file:   Pods/Realm/include/core/realm/descriptor_fwd.hpp
+#	new file:   Pods/Realm/include/core/realm/disable_sync_to_disk.hpp
+#	new file:   Pods/Realm/include/core/realm/exceptions.hpp
+#	new file:   Pods/Realm/include/core/realm/group.hpp
+#	new file:   Pods/Realm/include/core/realm/group_shared.hpp
+#	new file:   Pods/Realm/include/core/realm/group_shared_options.hpp
+#	new file:   Pods/Realm/include/core/realm/group_writer.hpp
+#	new file:   Pods/Realm/include/core/realm/handover_defs.hpp
+#	new file:   Pods/Realm/include/core/realm/history.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/array_writer.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/clamped_hex_dump.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/clock.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/cont_transact_hist.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/destroy_guard.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/input_stream.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/output_stream.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/sequential_getter.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/simulated_failure.hpp
+#	new file:   Pods/Realm/include/core/realm/impl/transact_log.hpp
+#	new file:   Pods/Realm/include/core/realm/index_string.hpp
+#	new file:   Pods/Realm/include/core/realm/lang_bind_helper.hpp
+#	new file:   Pods/Realm/include/core/realm/link_view.hpp
+#	new file:   Pods/Realm/include/core/realm/link_view_fwd.hpp
+#	new file:   Pods/Realm/include/core/realm/metrics/metric_timer.hpp
+#	new file:   Pods/Realm/include/core/realm/metrics/metrics.hpp
+#	new file:   Pods/Realm/include/core/realm/metrics/query_info.hpp
+#	new file:   Pods/Realm/include/core/realm/metrics/transaction_info.hpp
+#	new file:   Pods/Realm/include/core/realm/mixed.hpp
+#	new file:   Pods/Realm/include/core/realm/null.hpp
+#	new file:   Pods/Realm/include/core/realm/olddatetime.hpp
+#	new file:   Pods/Realm/include/core/realm/owned_data.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/collection_operator_expression.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/expression_container.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/keypath_mapping.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/parser.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/parser_utils.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/property_expression.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/query_builder.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/subquery_expression.hpp
+#	new file:   Pods/Realm/include/core/realm/parser/value_expression.hpp
+#	new file:   Pods/Realm/include/core/realm/query.hpp
+#	new file:   Pods/Realm/include/core/realm/query_conditions.hpp
+#	new file:   Pods/Realm/include/core/realm/query_engine.hpp
+#	new file:   Pods/Realm/include/core/realm/query_expression.hpp
+#	new file:   Pods/Realm/include/core/realm/query_operators.hpp
+#	new file:   Pods/Realm/include/core/realm/realm_nmmintrin.h
+#	new file:   Pods/Realm/include/core/realm/replication.hpp
+#	new file:   Pods/Realm/include/core/realm/row.hpp
+#	new file:   Pods/Realm/include/core/realm/spec.hpp
+#	new file:   Pods/Realm/include/core/realm/string_data.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/changeset.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/changeset_cooker.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/changeset_encoder.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/changeset_parser.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/client.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/crypto.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/crypto_server.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/feature_token.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/fingerprint.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/history.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/instruction_applier.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/instruction_replication.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/instructions.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/object.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/object_id.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/permissions.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/protocol.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/transform.hpp
+#	new file:   Pods/Realm/include/core/realm/sync/version.hpp
+#	new file:   Pods/Realm/include/core/realm/table.hpp
+#	new file:   Pods/Realm/include/core/realm/table_ref.hpp
+#	new file:   Pods/Realm/include/core/realm/table_view.hpp
+#	new file:   Pods/Realm/include/core/realm/timestamp.hpp
+#	new file:   Pods/Realm/include/core/realm/unicode.hpp
+#	new file:   Pods/Realm/include/core/realm/util/aes_cryptor.hpp
+#	new file:   Pods/Realm/include/core/realm/util/allocation_metrics.hpp
+#	new file:   Pods/Realm/include/core/realm/util/allocator.hpp
+#	new file:   Pods/Realm/include/core/realm/util/any.hpp
+#	new file:   Pods/Realm/include/core/realm/util/assert.hpp
+#	new file:   Pods/Realm/include/core/realm/util/backtrace.hpp
+#	new file:   Pods/Realm/include/core/realm/util/base64.hpp
+#	new file:   Pods/Realm/include/core/realm/util/basic_system_errors.hpp
+#	new file:   Pods/Realm/include/core/realm/util/bind_ptr.hpp
+#	new file:   Pods/Realm/include/core/realm/util/buffer.hpp
+#	new file:   Pods/Realm/include/core/realm/util/buffer_stream.hpp
+#	new file:   Pods/Realm/include/core/realm/util/call_with_tuple.hpp
+#	new file:   Pods/Realm/include/core/realm/util/cf_ptr.hpp
+#	new file:   Pods/Realm/include/core/realm/util/cf_str.hpp
+#	new file:   Pods/Realm/include/core/realm/util/circular_buffer.hpp
+#	new file:   Pods/Realm/include/core/realm/util/config.h
+#	new file:   Pods/Realm/include/core/realm/util/copy_dir_recursive.hpp
+#	new file:   Pods/Realm/include/core/realm/util/demangle.hpp
+#	new file:   Pods/Realm/include/core/realm/util/duplicating_logger.hpp
+#	new file:   Pods/Realm/include/core/realm/util/encrypted_file_mapping.hpp
+#	new file:   Pods/Realm/include/core/realm/util/enum.hpp
+#	new file:   Pods/Realm/include/core/realm/util/errno.hpp
+#	new file:   Pods/Realm/include/core/realm/util/features.h
+#	new file:   Pods/Realm/include/core/realm/util/fifo_helper.hpp
+#	new file:   Pods/Realm/include/core/realm/util/file.hpp
+#	new file:   Pods/Realm/include/core/realm/util/file_is_regular.hpp
+#	new file:   Pods/Realm/include/core/realm/util/file_mapper.hpp
+#	new file:   Pods/Realm/include/core/realm/util/fixed_size_buffer.hpp
+#	new file:   Pods/Realm/include/core/realm/util/flat_map.hpp
+#	new file:   Pods/Realm/include/core/realm/util/get_file_size.hpp
+#	new file:   Pods/Realm/include/core/realm/util/hex_dump.hpp
+#	new file:   Pods/Realm/include/core/realm/util/http.hpp
+#	new file:   Pods/Realm/include/core/realm/util/inspect.hpp
+#	new file:   Pods/Realm/include/core/realm/util/interprocess_condvar.hpp
+#	new file:   Pods/Realm/include/core/realm/util/interprocess_mutex.hpp
+#	new file:   Pods/Realm/include/core/realm/util/json_parser.hpp
+#	new file:   Pods/Realm/include/core/realm/util/load_file.hpp
+#	new file:   Pods/Realm/include/core/realm/util/logger.hpp
+#	new file:   Pods/Realm/include/core/realm/util/memory_stream.hpp
+#	new file:   Pods/Realm/include/core/realm/util/metered/deque.hpp
+#	new file:   Pods/Realm/include/core/realm/util/metered/map.hpp
+#	new file:   Pods/Realm/include/core/realm/util/metered/set.hpp
+#	new file:   Pods/Realm/include/core/realm/util/metered/string.hpp
+#	new file:   Pods/Realm/include/core/realm/util/metered/unordered_map.hpp
+#	new file:   Pods/Realm/include/core/realm/util/metered/unordered_set.hpp
+#	new file:   Pods/Realm/include/core/realm/util/metered/vector.hpp
+#	new file:   Pods/Realm/include/core/realm/util/misc_errors.hpp
+#	new file:   Pods/Realm/include/core/realm/util/misc_ext_errors.hpp
+#	new file:   Pods/Realm/include/core/realm/util/miscellaneous.hpp
+#	new file:   Pods/Realm/include/core/realm/util/network.hpp
+#	new file:   Pods/Realm/include/core/realm/util/network_ssl.hpp
+#	new file:   Pods/Realm/include/core/realm/util/optional.hpp
+#	new file:   Pods/Realm/include/core/realm/util/overload.hpp
+#	new file:   Pods/Realm/include/core/realm/util/parent_dir.hpp
+#	new file:   Pods/Realm/include/core/realm/util/platform_info.hpp
+#	new file:   Pods/Realm/include/core/realm/util/priority_queue.hpp
+#	new file:   Pods/Realm/include/core/realm/util/quote.hpp
+#	new file:   Pods/Realm/include/core/realm/util/random.hpp
+#	new file:   Pods/Realm/include/core/realm/util/resource_limits.hpp
+#	new file:   Pods/Realm/include/core/realm/util/safe_int_ops.hpp
+#	new file:   Pods/Realm/include/core/realm/util/scope_exit.hpp
+#	new file:   Pods/Realm/include/core/realm/util/serializer.hpp
+#	new file:   Pods/Realm/include/core/realm/util/shared_ptr.hpp
+#	new file:   Pods/Realm/include/core/realm/util/signal_blocker.hpp
+#	new file:   Pods/Realm/include/core/realm/util/string_buffer.hpp
+#	new file:   Pods/Realm/include/core/realm/util/string_view.hpp
+#	new file:   Pods/Realm/include/core/realm/util/substitute.hpp
+#	new file:   Pods/Realm/include/core/realm/util/system_process.hpp
+#	new file:   Pods/Realm/include/core/realm/util/terminate.hpp
+#	new file:   Pods/Realm/include/core/realm/util/thread.hpp
+#	new file:   Pods/Realm/include/core/realm/util/thread_exec_guard.hpp
+#	new file:   Pods/Realm/include/core/realm/util/time.hpp
+#	new file:   Pods/Realm/include/core/realm/util/timestamp_formatter.hpp
+#	new file:   Pods/Realm/include/core/realm/util/timestamp_logger.hpp
+#	new file:   Pods/Realm/include/core/realm/util/to_string.hpp
+#	new file:   Pods/Realm/include/core/realm/util/type_list.hpp
+#	new file:   Pods/Realm/include/core/realm/util/type_traits.hpp
+#	new file:   Pods/Realm/include/core/realm/util/uri.hpp
+#	new file:   Pods/Realm/include/core/realm/util/utf8.hpp
+#	new file:   Pods/Realm/include/core/realm/util/value_reset_guard.hpp
+#	new file:   Pods/Realm/include/core/realm/util/websocket.hpp
+#	new file:   Pods/Realm/include/core/realm/utilities.hpp
+#	new file:   Pods/Realm/include/core/realm/version.hpp
+#	new file:   Pods/Realm/include/core/realm/version_id.hpp
+#	new file:   Pods/Realm/include/core/realm/version_numbers.hpp
+#	new file:   Pods/Realm/include/core/realm/views.hpp
+#	new file:   Pods/Realm/include/execution_context_id.hpp
+#	new file:   Pods/Realm/include/feature_checks.hpp
+#	new file:   Pods/Realm/include/impl/apple/external_commit_helper.hpp
+#	new file:   Pods/Realm/include/impl/apple/keychain_helper.hpp
+#	new file:   Pods/Realm/include/impl/collection_change_builder.hpp
+#	new file:   Pods/Realm/include/impl/collection_notifier.hpp
+#	new file:   Pods/Realm/include/impl/external_commit_helper.hpp
+#	new file:   Pods/Realm/include/impl/list_notifier.hpp
+#	new file:   Pods/Realm/include/impl/notification_wrapper.hpp
+#	new file:   Pods/Realm/include/impl/object_accessor_impl.hpp
+#	new file:   Pods/Realm/include/impl/object_notifier.hpp
+#	new file:   Pods/Realm/include/impl/primitive_list_notifier.hpp
+#	new file:   Pods/Realm/include/impl/realm_coordinator.hpp
+#	new file:   Pods/Realm/include/impl/results_notifier.hpp
+#	new file:   Pods/Realm/include/impl/transact_log_handler.hpp
+#	new file:   Pods/Realm/include/impl/weak_realm_notifier.hpp
+#	new file:   Pods/Realm/include/index_set.hpp
+#	new file:   Pods/Realm/include/keypath_helpers.hpp
+#	new file:   Pods/Realm/include/list.hpp
+#	new file:   Pods/Realm/include/object.hpp
+#	new file:   Pods/Realm/include/object_accessor.hpp
+#	new file:   Pods/Realm/include/object_schema.hpp
+#	new file:   Pods/Realm/include/object_store.hpp
+#	new file:   Pods/Realm/include/property.hpp
+#	new file:   Pods/Realm/include/results.hpp
+#	new file:   Pods/Realm/include/schema.hpp
+#	new file:   Pods/Realm/include/shared_realm.hpp
+#	new file:   Pods/Realm/include/sync/async_open_task.hpp
+#	new file:   Pods/Realm/include/sync/impl/apple/network_reachability_observer.hpp
+#	new file:   Pods/Realm/include/sync/impl/apple/system_configuration.hpp
+#	new file:   Pods/Realm/include/sync/impl/network_reachability.hpp
+#	new file:   Pods/Realm/include/sync/impl/sync_client.hpp
+#	new file:   Pods/Realm/include/sync/impl/sync_file.hpp
+#	new file:   Pods/Realm/include/sync/impl/sync_metadata.hpp
+#	new file:   Pods/Realm/include/sync/impl/work_queue.hpp
+#	new file:   Pods/Realm/include/sync/partial_sync.hpp
+#	new file:   Pods/Realm/include/sync/subscription_state.hpp
+#	new file:   Pods/Realm/include/sync/sync_config.hpp
+#	new file:   Pods/Realm/include/sync/sync_manager.hpp
+#	new file:   Pods/Realm/include/sync/sync_permission.hpp
+#	new file:   Pods/Realm/include/sync/sync_session.hpp
+#	new file:   Pods/Realm/include/sync/sync_user.hpp
+#	new file:   Pods/Realm/include/thread_safe_reference.hpp
+#	new file:   Pods/Realm/include/util/aligned_union.hpp
+#	new file:   Pods/Realm/include/util/apple/event_loop_signal.hpp
+#	new file:   Pods/Realm/include/util/atomic_shared_ptr.hpp
+#	new file:   Pods/Realm/include/util/event_loop_dispatcher.hpp
+#	new file:   Pods/Realm/include/util/event_loop_signal.hpp
+#	new file:   Pods/Realm/include/util/tagged_bool.hpp
+#	new file:   Pods/Realm/include/util/uuid.hpp
+#	new file:   Pods/RealmSwift/LICENSE
+#	new file:   Pods/RealmSwift/README.md
+#	new file:   Pods/RealmSwift/RealmSwift/Aliases.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Error.swift
+#	new file:   Pods/RealmSwift/RealmSwift/LinkingObjects.swift
+#	new file:   Pods/RealmSwift/RealmSwift/List.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Migration.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Object.swift
+#	new file:   Pods/RealmSwift/RealmSwift/ObjectSchema.swift
+#	new file:   Pods/RealmSwift/RealmSwift/ObjectiveCSupport+Sync.swift
+#	new file:   Pods/RealmSwift/RealmSwift/ObjectiveCSupport.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Optional.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Property.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Realm.swift
+#	new file:   Pods/RealmSwift/RealmSwift/RealmCollection.swift
+#	new file:   Pods/RealmSwift/RealmSwift/RealmConfiguration.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Results.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Schema.swift
+#	new file:   Pods/RealmSwift/RealmSwift/SortDescriptor.swift
+#	new file:   Pods/RealmSwift/RealmSwift/SwiftVersion.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Sync.swift
+#	new file:   Pods/RealmSwift/RealmSwift/ThreadSafeReference.swift
+#	new file:   Pods/RealmSwift/RealmSwift/Util.swift
+#	new file:   Pods/RealmSwift/build.sh
+#	new file:   Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist
+#	new file:   Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-dummy.m
+#	new file:   Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch
+#	new file:   Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h
+#	new file:   Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap
+#	new file:   Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.xcconfig
+#	new file:   Pods/Target Support Files/IQKeyboardManagerSwift/ResourceBundle-IQKeyboardManagerSwift-IQKeyboardManagerSwift-Info.plist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-Info.plist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-acknowledgements.markdown
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-acknowledgements.plist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-dummy.m
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-frameworks-Debug-input-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-frameworks-Debug-output-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-frameworks-Release-input-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-frameworks-Release-output-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-frameworks.sh
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests-umbrella.h
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests.debug.xcconfig
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests.modulemap
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard-CustomFlashCardUITests/Pods-CustomFlashCard-CustomFlashCardUITests.release.xcconfig
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-Info.plist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-acknowledgements.markdown
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-acknowledgements.plist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-dummy.m
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-frameworks-Debug-input-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-frameworks-Debug-output-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-frameworks-Release-input-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-frameworks-Release-output-files.xcfilelist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-frameworks.sh
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard-umbrella.h
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard.debug.xcconfig
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard.modulemap
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCard/Pods-CustomFlashCard.release.xcconfig
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests-Info.plist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests-acknowledgements.markdown
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests-acknowledgements.plist
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests-dummy.m
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests-umbrella.h
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests.debug.xcconfig
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests.modulemap
+#	new file:   Pods/Target Support Files/Pods-CustomFlashCardTests/Pods-CustomFlashCardTests.release.xcconfig
+#	new file:   Pods/Target Support Files/Realm/Realm-Info.plist
+#	new file:   Pods/Target Support Files/Realm/Realm-dummy.m
+#	new file:   Pods/Target Support Files/Realm/Realm-prefix.pch
+#	new file:   Pods/Target Support Files/Realm/Realm.modulemap
+#	new file:   Pods/Target Support Files/Realm/Realm.xcconfig
+#	new file:   Pods/Target Support Files/RealmSwift/RealmSwift-Info.plist
+#	new file:   Pods/Target Support Files/RealmSwift/RealmSwift-dummy.m
+#	new file:   Pods/Target Support Files/RealmSwift/RealmSwift-prefix.pch
+#	new file:   Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h
+#	new file:   Pods/Target Support Files/RealmSwift/RealmSwift.modulemap
+#	new file:   Pods/Target Support Files/RealmSwift/RealmSwift.xcconfig
+#

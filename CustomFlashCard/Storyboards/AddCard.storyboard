@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add A Card-->
+        <scene sceneID="kHw-of-kph">
+            <objects>
+                <viewController id="ISo-iz-96v" customClass="CardFormViewController" customModule="CustomFlashCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cf4-97-2Wf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Z8-Lg-Dpu">
+                                <rect key="frame" x="20" y="118" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Meaning" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Atn-lH-fyY">
+                                <rect key="frame" x="20" y="172" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HiO-r6-Azd">
+                                <rect key="frame" x="20" y="321" width="374" height="128"/>
+                                <color key="backgroundColor" name="tvBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="QaM-F0-uj5"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0r-CF-Cqp">
+                                <rect key="frame" x="157" y="762" width="100" height="50"/>
+                                <color key="backgroundColor" name="FontColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eZH-xJ-zwj"/>
+                                    <constraint firstAttribute="height" constant="50" id="zsX-tP-rEX"/>
+                                </constraints>
+                                <state key="normal" title="Save Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="ISo-iz-96v" eventType="touchUpInside" id="rpP-0t-rgi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example sentence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiE-Y5-UVJ">
+                                <rect key="frame" x="20" y="280" width="140" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dlu-fB-dOx"/>
+                                    <constraint firstAttribute="width" constant="140" id="oEP-Xq-YpI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6N-Ba-XWE">
+                                <rect key="frame" x="20" y="226" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wqg-X9-Yzr" firstAttribute="trailing" secondItem="HiO-r6-Azd" secondAttribute="trailing" constant="20" id="5Wl-Fv-bB2"/>
+                            <constraint firstItem="HiO-r6-Azd" firstAttribute="leading" secondItem="wqg-X9-Yzr" secondAttribute="leading" constant="20" id="Bxe-Jg-qVe"/>
+                            <constraint firstItem="HiO-r6-Azd" firstAttribute="top" secondItem="JiE-Y5-UVJ" secondAttribute="bottom" constant="20" id="K6M-rR-7N5"/>
+                            <constraint firstItem="1Z8-Lg-Dpu" firstAttribute="leading" secondItem="wqg-X9-Yzr" secondAttribute="leading" constant="20" id="KM9-x1-Jal"/>
+                            <constraint firstItem="wqg-X9-Yzr" firstAttribute="trailing" secondItem="i6N-Ba-XWE" secondAttribute="trailing" constant="20" id="Lsn-jT-TMj"/>
+                            <constraint firstItem="JiE-Y5-UVJ" firstAttribute="top" secondItem="i6N-Ba-XWE" secondAttribute="bottom" constant="20" id="NDc-yo-hb1"/>
+                            <constraint firstItem="1Z8-Lg-Dpu" firstAttribute="top" secondItem="wqg-X9-Yzr" secondAttribute="top" constant="30" id="TRA-ga-obO"/>
+                            <constraint firstItem="wqg-X9-Yzr" firstAttribute="trailing" secondItem="Atn-lH-fyY" secondAttribute="trailing" constant="20" id="V3e-Yz-eOG"/>
+                            <constraint firstItem="Atn-lH-fyY" firstAttribute="leading" secondItem="wqg-X9-Yzr" secondAttribute="leading" constant="20" id="ZXD-1O-I8Y"/>
+                            <constraint firstItem="JiE-Y5-UVJ" firstAttribute="leading" secondItem="wqg-X9-Yzr" secondAttribute="leading" constant="20" id="aTa-jr-HIF"/>
+                            <constraint firstItem="i6N-Ba-XWE" firstAttribute="top" secondItem="Atn-lH-fyY" secondAttribute="bottom" constant="20" id="jMT-2R-F4f"/>
+                            <constraint firstItem="i6N-Ba-XWE" firstAttribute="leading" secondItem="wqg-X9-Yzr" secondAttribute="leading" constant="20" id="kcz-cl-hnM"/>
+                            <constraint firstItem="1Z8-Lg-Dpu" firstAttribute="centerX" secondItem="cf4-97-2Wf" secondAttribute="centerX" id="nk4-dB-8Kc"/>
+                            <constraint firstItem="T0r-CF-Cqp" firstAttribute="centerX" secondItem="cf4-97-2Wf" secondAttribute="centerX" id="nx5-o4-gmN"/>
+                            <constraint firstItem="wqg-X9-Yzr" firstAttribute="bottom" secondItem="T0r-CF-Cqp" secondAttribute="bottom" constant="50" id="rbc-tm-XwC"/>
+                            <constraint firstItem="Atn-lH-fyY" firstAttribute="top" secondItem="1Z8-Lg-Dpu" secondAttribute="bottom" constant="20" id="s7F-9g-a0R"/>
+                            <constraint firstItem="wqg-X9-Yzr" firstAttribute="trailing" secondItem="1Z8-Lg-Dpu" secondAttribute="trailing" constant="20" id="xkf-kc-6zt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wqg-X9-Yzr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add A Card" id="NjC-VM-yac">
+                        <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.left" catalog="system" style="done" id="SOL-yh-YaE">
+                            <color key="tintColor" name="FontColor"/>
+                            <connections>
+                                <action selector="backPressed:" destination="ISo-iz-96v" id="rvQ-PK-f9D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfCategory" destination="i6N-Ba-XWE" id="i8x-bP-C0C"/>
+                        <outlet property="tfMeaning" destination="Atn-lH-fyY" id="rFo-4F-OUS"/>
+                        <outlet property="tfWord" destination="1Z8-Lg-Dpu" id="Jkx-NH-A1G"/>
+                        <outlet property="tvSentence" destination="HiO-r6-Azd" id="zdS-wu-N4J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5D-e0-Lgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3853.6231884057975" y="45.535714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uIG-Rg-uq0">
+            <objects>
+                <navigationController storyboardIdentifier="AddCard" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="HPI-V2-IGn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3RB-uf-uMu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ISo-iz-96v" kind="relationship" relationship="rootViewController" id="U2C-pj-bkV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71S-ik-ZNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943.4782608695655" y="45.535714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left" catalog="system" width="64" height="52"/>
+        <namedColor name="FontColor">
+            <color red="0.21299999952316284" green="0.23100000619888306" blue="0.69099998474121094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="tvBackground">
+            <color red="0.44600000977516174" green="0.53600001335144043" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
