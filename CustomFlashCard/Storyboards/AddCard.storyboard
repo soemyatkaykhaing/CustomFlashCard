@@ -28,7 +28,7 @@
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HiO-r6-Azd">
                                 <rect key="frame" x="20" y="321" width="374" height="128"/>
-                                <color key="backgroundColor" name="tvBackground"/>
+                                <color key="backgroundColor" name="Color2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="QaM-F0-uj5"/>
                                 </constraints>
@@ -38,7 +38,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0r-CF-Cqp">
                                 <rect key="frame" x="157" y="762" width="100" height="50"/>
-                                <color key="backgroundColor" name="FontColor"/>
+                                <color key="backgroundColor" name="color1"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="eZH-xJ-zwj"/>
                                     <constraint firstAttribute="height" constant="50" id="zsX-tP-rEX"/>
@@ -66,7 +66,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Color4"/>
                         <constraints>
                             <constraint firstItem="wqg-X9-Yzr" firstAttribute="trailing" secondItem="HiO-r6-Azd" secondAttribute="trailing" constant="20" id="5Wl-Fv-bB2"/>
                             <constraint firstItem="HiO-r6-Azd" firstAttribute="leading" secondItem="wqg-X9-Yzr" secondAttribute="leading" constant="20" id="Bxe-Jg-qVe"/>
@@ -89,8 +89,8 @@
                         <viewLayoutGuide key="safeArea" id="wqg-X9-Yzr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add A Card" id="NjC-VM-yac">
-                        <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.left" catalog="system" style="done" id="SOL-yh-YaE">
-                            <color key="tintColor" name="FontColor"/>
+                        <barButtonItem key="leftBarButtonItem" image="icons8-back-50" style="done" id="SOL-yh-YaE">
+                            <color key="tintColor" name="color1"/>
                             <connections>
                                 <action selector="backPressed:" destination="ISo-iz-96v" id="rvQ-PK-f9D"/>
                             </connections>
@@ -115,6 +115,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3RB-uf-uMu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="color1"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="color1"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -127,12 +133,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.left" catalog="system" width="64" height="52"/>
-        <namedColor name="FontColor">
-            <color red="0.21299999952316284" green="0.23100000619888306" blue="0.69099998474121094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        <image name="icons8-back-50" width="50" height="50"/>
+        <namedColor name="Color2">
+            <color red="0.50980392156862742" green="0.7686274509803922" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="tvBackground">
-            <color red="0.44600000977516174" green="0.53600001335144043" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        <namedColor name="Color4">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color1">
+            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color1">
+            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

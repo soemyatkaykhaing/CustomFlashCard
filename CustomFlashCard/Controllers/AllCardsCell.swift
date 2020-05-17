@@ -3,7 +3,7 @@
 //  CustomFlashCard
 //
 //  Created by MacBook on 21/04/2020.
-//  Copyright © 2020 MacBook. All rights reserved.
+//  Copyright © 2020#imageLiteral(resourceName: "icons8-back-50.png") MacBook. All rights reserved.
 //
 
 import Foundation

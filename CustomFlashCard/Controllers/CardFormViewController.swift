@@ -37,8 +37,10 @@ class CardFormViewController: UIViewController,UIPickerViewDelegate,UIPickerView
         newCard.date = Date()
         newCard.word = tfWord.text
         newCard.meaning = tfMeaning.text
+        newCard.category = tfCategory.text
+        newCard.sentence = tvSentence.text
         self.save(card: newCard)
-        let alert = UIAlertController(title: "New Cateogry", message: "A New Category is added", preferredStyle: .alert)
+        let alert = UIAlertController(title: "New Card", message: "A New Card is added", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
@@ -69,6 +71,9 @@ class CardFormViewController: UIViewController,UIPickerViewDelegate,UIPickerView
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         return categories![row].title
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        tfCategory.text = categories![row].title
     }
     //MARK: Utilities functions
     func save(card: Card) {

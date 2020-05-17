@@ -14,24 +14,31 @@ class CreateViewController: UIViewController {
     @IBOutlet weak var cardView: UIView!
     @IBOutlet var cardTap: UITapGestureRecognizer!
     
+    @IBOutlet weak var btnCreateCard: UIButton!
     var front: UIView!
     var back: UIView!
     var frontLabel : UILabel!
     var backLabel: UILabel!
     var showingBack = true
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
         let width = self.cardView.frame.width
         let height = self.cardView.frame.height
         let rect = CGRect(x: 0, y: 0, width: width, height: height)
         cardTap.addTarget(self, action: #selector(self.tapped(_:)))
         front = UIView(frame: rect)
         back = UIView(frame: rect)
-        front.backgroundColor = .blue
-        back.backgroundColor = .orange
+        front.backgroundColor = .lightGray
+        back.backgroundColor = .tertiaryLabel
         cardView.isUserInteractionEnabled = true
         cardView.addSubview(back)
+        btnCreateCard.layer.shadowColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        btnCreateCard.layer.cornerRadius = 20
+        btnCreateCard.layer.shadowRadius = 10
+       
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
     @objc func tapped(_ sender: UITapGestureRecognizer) {
         var showingSide = front

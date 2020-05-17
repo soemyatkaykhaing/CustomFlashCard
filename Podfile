@@ -8,6 +8,8 @@ target 'CustomFlashCard' do
   # Pods for CustomFlashCard
   pod 'IQKeyboardManagerSwift'
   pod 'RealmSwift'
+  pod 'LGButton'
+
   target 'CustomFlashCardTests' do
     inherit! :search_paths
     # Pods for testing

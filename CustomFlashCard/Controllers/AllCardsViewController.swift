@@ -16,7 +16,7 @@ class AllCardsViewController: UIViewController, UICollectionViewDelegateFlowLayo
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCards()
-        allCardsCollectionView.register(UINib.init(nibName: "AllCardsCell", bundle: nil), forCellWithReuseIdentifier: "AllCardsCell")
+        allCardsCollectionView.register(UINib.init(nibName: "WordCardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "WordCardCell")
         allCardsCollectionView.reloadData()
         self.allCardsCollectionView.delegate = self
         self.allCardsCollectionView.dataSource = self
@@ -25,6 +25,9 @@ class AllCardsViewController: UIViewController, UICollectionViewDelegateFlowLayo
         view.addGestureRecognizer(tap)
         tap.cancelsTouchesInView = false
 
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        loadCards()
     }
 }
 extension AllCardsViewController: UICollectionViewDelegate,UICollectionViewDataSource {
@@ -37,13 +40,17 @@ extension AllCardsViewController: UICollectionViewDelegate,UICollectionViewDataS
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
-                 "AllCardsCell", for: indexPath) as! AllCardsCell
+                 "WordCardCell", for: indexPath) as! WordCardCollectionViewCell
         cell.lbWord.text = cards?[indexPath.row].word ?? "No cards yet"
          return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-          print("selected")
+          let storyboard = UIStoryboard(name: "CardView", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "CardView") as! UINavigationController
+        let vc1 = vc.topViewController as! CardViewController
+        vc1.card = cards?[indexPath.row]
+          self.present(vc, animated: true, completion: nil)
 
 
     }
