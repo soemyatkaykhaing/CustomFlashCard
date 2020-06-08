@@ -74,7 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="XFK-X4-jFZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add A Category" id="KKW-OS-dew">
-                        <barButtonItem key="leftBarButtonItem" image="icons8-back-50" id="ctS-Q7-PPe">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-back-30" id="ctS-Q7-PPe">
                             <color key="tintColor" name="color1"/>
                             <connections>
                                 <action selector="backPressed:" destination="INj-pJ-EOJ" id="jrs-i0-Qgi"/>
@@ -116,7 +116,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-back-50" width="50" height="50"/>
+        <image name="icons8-back-30" width="30" height="30"/>
         <namedColor name="BgColor">
             <color red="1" green="0.50099998712539673" blue="0.289000004529953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

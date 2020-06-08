@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Practice-->
+        <scene sceneID="cvW-OF-fkf">
+            <objects>
+                <viewController id="IgN-vu-4Ay" customClass="PracticeCaredViewController" customModule="CustomFlashCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l41-j9-jtA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="A2Q-3e-bMF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Practice" id="jXs-sX-6kP">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-back-30" id="7yk-bX-emJ">
+                            <color key="tintColor" name="color1"/>
+                            <connections>
+                                <action selector="backButton:" destination="IgN-vu-4Ay" id="UO9-XG-QYS"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="6Hx-gh-Tgs">
+                            <color key="tintColor" name="color1"/>
+                            <connections>
+                                <action selector="resetTapped:" destination="IgN-vu-4Ay" id="XtZ-Sj-DIK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWR-83-Ehf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="12.723214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dkm-q9-RZV">
+            <objects>
+                <navigationController storyboardIdentifier="PracticeCard" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Wfx-U8-7J9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="71U-Uu-RLS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="color1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IgN-vu-4Ay" kind="relationship" relationship="rootViewController" id="2J8-2m-wxO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgL-Rd-iRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-back-30" width="30" height="30"/>
+        <namedColor name="color1">
+            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color1">
+            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

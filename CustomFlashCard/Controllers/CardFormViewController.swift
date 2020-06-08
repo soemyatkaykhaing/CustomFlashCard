@@ -21,6 +21,7 @@ class CardFormViewController: UIViewController,UIPickerViewDelegate,UIPickerView
     let thePicker = UIPickerView()
     var cardArray: [Data] = []
     var categories: Results<Category>?
+    var selectedCategory: Category?
     lazy var realm:Realm = {
         return try! Realm()
     }()
@@ -37,13 +38,23 @@ class CardFormViewController: UIViewController,UIPickerViewDelegate,UIPickerView
         newCard.date = Date()
         newCard.word = tfWord.text
         newCard.meaning = tfMeaning.text
-        newCard.category = tfCategory.text
         newCard.sentence = tvSentence.text
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "MainView") as CreateViewController
+       print(vc)
         self.save(card: newCard)
         let alert = UIAlertController(title: "New Card", message: "A New Card is added", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .cancel) { (clear) in
+//            self.tfWord.text = ""
+//            self.tfCategory.text = ""
+//            self.tfMeaning.text = ""
+//            self.tvSentence.text = ""
+           
+        }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+        vc.acard = newCard
+        NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil,userInfo: ["object":newCard])
     }
     
     @IBAction func backPressed(_ sender: Any) {
@@ -74,17 +85,23 @@ class CardFormViewController: UIViewController,UIPickerViewDelegate,UIPickerView
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         tfCategory.text = categories![row].title
+        selectedCategory = categories![row]
     }
     //MARK: Utilities functions
     func save(card: Card) {
-           do {
-               try realm.write {
-                 realm.add(card)
-                
-               }
-           } catch {
-               print("Error saving new items, \(error)")
-           }
+        if let currentCategory = self.selectedCategory {
+                       do {
+                           try self.realm.write {
+                               let card = Card()
+                            card.word = tfWord.text!
+                            card.meaning = tfMeaning.text!
+                            card.date = Date()
+                            currentCategory.cards.append(card)
+                           }
+                       } catch {
+                           print("Error saving new items, \(error)")
+                       }
+        }
     }
     func loadCategories() {
         categories = realm.objects(Category.self)

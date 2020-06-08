@@ -14,7 +14,6 @@ class Card: Object {
     @objc dynamic var meaning : String? = ""
     @objc dynamic var date : Date? = nil
     @objc dynamic var sentence : String? = ""
-    @objc dynamic var category : String? = nil
     var parentSubject = LinkingObjects(fromType: Category.self, property: "cards")
     
 }

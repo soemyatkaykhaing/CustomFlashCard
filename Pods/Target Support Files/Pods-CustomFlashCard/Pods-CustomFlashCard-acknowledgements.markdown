@@ -1,11 +1,11 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## IQKeyboardManagerSwift
+## DJSemiModalViewController
 
 MIT License
 
-Copyright (c) 2013-2017 Iftekhar Qurashi
+Copyright (c) 2018 David Jonsén
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,11 +26,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## LGButton
+## IQKeyboardManagerSwift
 
 MIT License
 
-Copyright (c) 2017 Lorenzo Greco
+Copyright (c) 2013-2017 Iftekhar Qurashi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

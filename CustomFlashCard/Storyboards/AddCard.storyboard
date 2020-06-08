@@ -89,7 +89,7 @@
                         <viewLayoutGuide key="safeArea" id="wqg-X9-Yzr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add A Card" id="NjC-VM-yac">
-                        <barButtonItem key="leftBarButtonItem" image="icons8-back-50" style="done" id="SOL-yh-YaE">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-back-30" style="done" id="SOL-yh-YaE">
                             <color key="tintColor" name="color1"/>
                             <connections>
                                 <action selector="backPressed:" destination="ISo-iz-96v" id="rvQ-PK-f9D"/>
@@ -133,7 +133,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-back-50" width="50" height="50"/>
+        <image name="icons8-back-30" width="30" height="30"/>
         <namedColor name="Color2">
             <color red="0.50980392156862742" green="0.7686274509803922" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

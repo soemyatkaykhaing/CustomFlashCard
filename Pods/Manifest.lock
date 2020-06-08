@@ -1,6 +1,6 @@
 PODS:
+  - DJSemiModalViewController (0.1.4)
   - IQKeyboardManagerSwift (6.5.4)
-  - LGButton (1.1.6)
   - Realm (4.4.0):
     - Realm/Headers (= 4.4.0)
   - Realm/Headers (4.4.0)
@@ -8,23 +8,23 @@ PODS:
     - Realm (= 4.4.0)
 
 DEPENDENCIES:
+  - DJSemiModalViewController
   - IQKeyboardManagerSwift
-  - LGButton
   - RealmSwift
 
 SPEC REPOS:
   trunk:
+    - DJSemiModalViewController
     - IQKeyboardManagerSwift
-    - LGButton
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  DJSemiModalViewController: a7b049b3a565207f739ba81ea99a71ac04deb0fd
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
-  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
   Realm: e125f464884cda953ebefe70c671b75b03b81b9b
   RealmSwift: 33656a42bd300959a081fc13347376bc478071af
 
-PODFILE CHECKSUM: 6f5a981369cf9ca2f53b5cedb51c4bd99a0c8622
+PODFILE CHECKSUM: b9a0e405289b92c962ddda565c33d96b9264981f
 
 COCOAPODS: 1.8.4

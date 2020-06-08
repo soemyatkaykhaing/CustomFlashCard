@@ -8,9 +8,10 @@
 
 import Foundation
 import RealmSwift
-class AllCardsViewController: UIViewController, UICollectionViewDelegateFlowLayout {
-    @IBOutlet weak var searchBar: UISearchBar!
+class AllCardsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     @IBOutlet weak var allCardsCollectionView: UICollectionView!
+    
+    @IBOutlet weak var cardSearchBar: UISearchBar!
     var cards: Results<Card>?
     let realm = try! Realm()
     override func viewDidLoad() {
@@ -24,7 +25,7 @@ class AllCardsViewController: UIViewController, UICollectionViewDelegateFlowLayo
         let tap = UITapGestureRecognizer()
         view.addGestureRecognizer(tap)
         tap.cancelsTouchesInView = false
-
+        cardSearchBar.delegate = self
     }
     override func viewDidAppear(_ animated: Bool) {
         loadCards()
@@ -67,4 +68,17 @@ extension AllCardsViewController: UICollectionViewDelegate,UICollectionViewDataS
         cards = realm.objects(Card.self)
         allCardsCollectionView.reloadData()
     }
+     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+           cards = cards?.filter("word CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "word", ascending: true)
+           allCardsCollectionView.reloadData()
+       }
+       
+       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+           if searchBar.text?.count == 0 {
+               loadCards()
+               DispatchQueue.main.async {
+                   searchBar.resignFirstResponder()
+               }
+           }
+       }
 }

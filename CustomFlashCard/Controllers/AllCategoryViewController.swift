@@ -48,10 +48,10 @@ extension AllCategoryViewController: UICollectionViewDelegate,UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-          let storyboard = UIStoryboard(name: "CardView", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "CardView") as! UINavigationController
-//        let vc1 = vc.topViewController as! CardViewController
-//        vc1.card = categories?[indexPath.row]
+          let storyboard = UIStoryboard(name: "PracticeCard", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "PracticeCard") as! UINavigationController
+        let nextVC = vc.topViewController as! PracticeCaredViewController
+        nextVC.selectedCategory = categories?[indexPath.row]
           self.present(vc, animated: true, completion: nil)
 
 

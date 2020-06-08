@@ -11,7 +11,7 @@
         <!--Create-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="CreateViewController" customModule="CustomFlashCard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" id="9pv-A4-QxB" customClass="CreateViewController" customModule="CustomFlashCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,21 +23,26 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="M79-2u-mTC" secondAttribute="height" multiplier="7:4" id="vpT-dY-c6d"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Bdl-M2-SH2">
-                                        <rect key="frame" x="0.0" y="28" width="345" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bdl-M2-SH2" id="9fm-3U-004">
-                                            <rect key="frame" x="0.0" y="0.0" width="345" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQm-jo-5k0">
                                 <rect key="frame" x="30" y="180" width="315" height="172"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRm-5b-feT">
+                                        <rect key="frame" x="136.5" y="75.5" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eRm-5b-feT" secondAttribute="height" multiplier="2:1" id="FJF-of-z8O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Color4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" name="Color2"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="eRm-5b-feT" firstAttribute="centerX" secondItem="kQm-jo-5k0" secondAttribute="centerX" id="KAi-kT-5n4"/>
+                                    <constraint firstItem="eRm-5b-feT" firstAttribute="centerY" secondItem="kQm-jo-5k0" secondAttribute="centerY" id="ovy-42-yaO"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="lPX-I3-Pgc" appends="YES" id="6ne-Ez-CdH"/>
                                 </connections>
@@ -53,7 +58,7 @@
                                         </constraints>
                                         <state key="normal" title="GROUP">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="addSubjectPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="naR-QB-P2v"/>
@@ -67,7 +72,7 @@
                                         </constraints>
                                         <state key="normal" title="TEXT REG">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="addSubjectPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="EJf-DW-AdF"/>
@@ -122,12 +127,14 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create" image="folder.badge.minus" catalog="system" id="acW-dT-cKf">
-                        <color key="badgeColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="badgeColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="btnCreateCard" destination="nQ2-Tn-0xb" id="jhq-nF-hD5"/>
                         <outlet property="cardTap" destination="lPX-I3-Pgc" id="JIa-qb-FmL"/>
                         <outlet property="cardView" destination="kQm-jo-5k0" id="dc4-2V-zlD"/>
+                        <outlet property="lblWordInCard" destination="eRm-5b-feT" id="Ipk-mf-7pd"/>
+                        <outlet property="letterTableView" destination="M79-2u-mTC" id="XJ7-4a-EPF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -213,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="782.60869565217399" y="227.67857142857142"/>
         </scene>
-        <!--All Category View Controller-->
+        <!--Practice-->
         <scene sceneID="jvH-mx-5M3">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Swq-W6-YD7" customClass="AllCategoryViewController" customModule="CustomFlashCard" customModuleProvider="target" sceneMemberID="viewController">
@@ -242,8 +249,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="46W-9t-Cy6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CgN-Y3-0Ee">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-back-50" id="Sip-bN-ujz">
+                    <navigationItem key="navigationItem" title="Practice" id="CgN-Y3-0Ee">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-back-30" id="Sip-bN-ujz">
                             <color key="tintColor" name="color1"/>
                         </barButtonItem>
                     </navigationItem>
@@ -288,18 +295,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFi-Fn-AkD">
-                                <rect key="frame" x="0.0" y="56" width="375" height="50"/>
-                                <color key="backgroundColor" name="color1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="IO3-0Y-5Pn"/>
-                                </constraints>
-                                <state key="normal" title="Add Filter">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1f4-YU-zg0">
-                                <rect key="frame" x="0.0" y="114" width="375" height="533"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="591"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pep-c1-g9d">
                                     <size key="itemSize" width="50" height="50"/>
@@ -312,13 +309,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="jDa-6m-oYf" firstAttribute="trailing" secondItem="OFi-Fn-AkD" secondAttribute="trailing" id="5ww-wA-7q8"/>
                             <constraint firstItem="9YU-tQ-5IX" firstAttribute="leading" secondItem="jDa-6m-oYf" secondAttribute="leading" id="Llj-ff-ucy"/>
                             <constraint firstItem="9YU-tQ-5IX" firstAttribute="top" secondItem="jDa-6m-oYf" secondAttribute="top" id="M0Q-aX-HUh"/>
+                            <constraint firstItem="1f4-YU-zg0" firstAttribute="top" secondItem="9YU-tQ-5IX" secondAttribute="bottom" id="PCn-kh-vc7"/>
                             <constraint firstItem="9YU-tQ-5IX" firstAttribute="trailing" secondItem="jDa-6m-oYf" secondAttribute="trailing" id="Y4L-Fn-HmB"/>
-                            <constraint firstItem="1f4-YU-zg0" firstAttribute="top" secondItem="OFi-Fn-AkD" secondAttribute="bottom" constant="8" symbolic="YES" id="aSl-m9-oXE"/>
-                            <constraint firstItem="OFi-Fn-AkD" firstAttribute="leading" secondItem="jDa-6m-oYf" secondAttribute="leading" id="c2C-tr-EYX"/>
-                            <constraint firstItem="OFi-Fn-AkD" firstAttribute="top" secondItem="9YU-tQ-5IX" secondAttribute="bottom" symbolic="YES" id="dCS-MX-tIH"/>
                             <constraint firstItem="1f4-YU-zg0" firstAttribute="trailing" secondItem="jDa-6m-oYf" secondAttribute="trailing" id="fhF-Fl-xnL"/>
                             <constraint firstAttribute="bottom" secondItem="1f4-YU-zg0" secondAttribute="bottom" constant="20" symbolic="YES" id="jql-kx-hEG"/>
                             <constraint firstItem="1f4-YU-zg0" firstAttribute="leading" secondItem="jDa-6m-oYf" secondAttribute="leading" id="vRA-oF-stg"/>
@@ -332,12 +326,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="allCardsCollectionView" destination="1f4-YU-zg0" id="cKW-tv-osZ"/>
-                        <outlet property="searchBar" destination="9YU-tQ-5IX" id="ZMd-s5-Cyt"/>
+                        <outlet property="cardSearchBar" destination="9YU-tQ-5IX" id="xjo-Vx-NUs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPj-Es-MWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269.56521739130437" y="1076.7857142857142"/>
+            <point key="canvasLocation" x="268" y="1076.311844077961"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T8H-Mo-Sv2">
@@ -348,6 +342,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0qd-Ym-tQX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="color1"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -361,12 +358,15 @@
     </scenes>
     <resources>
         <image name="folder.badge.minus" catalog="system" width="64" height="44"/>
-        <image name="icons8-back-50" width="50" height="50"/>
+        <image name="icons8-back-30" width="30" height="30"/>
         <namedColor name="Color2">
             <color red="0.50980392156862742" green="0.7686274509803922" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Color4">
             <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color1">
+            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color1">
             <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

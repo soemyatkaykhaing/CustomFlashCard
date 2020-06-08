@@ -37,8 +37,8 @@ class CardViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         loadCategories()
         tfWord.text = card?.word
         tfMeaning.text = card?.meaning
-        tfCategory.text = card?.category
         tvComment.text = card?.sentence
+        tfCategory.text = realm.objects(Category.self).filter(" cards.word = %@", card!.word!).first?.title
         tfCategory.inputView = thePicker
                thePicker.delegate = self
                thePicker.dataSource = self
@@ -80,7 +80,6 @@ class CardViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                     try realm.write{
                         acard.word = tfWord.text
                         acard.meaning = tfMeaning.text
-                        acard.category = tfCategory.text
                         acard.sentence = tvComment.text
                     }
                     let alert = UIAlertController(title: "Edit", message: "Your card has been Edit", preferredStyle: .alert)
