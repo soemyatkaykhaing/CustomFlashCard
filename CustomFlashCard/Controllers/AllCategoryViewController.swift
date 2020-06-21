@@ -22,7 +22,6 @@ class AllCategoryViewController: UIViewController {
         categoryCollectionView.reloadData()
         self.categoryCollectionView.delegate = self
         self.categoryCollectionView.dataSource = self
-        categoryCollectionView.allowsSelection = true
         let tap = UITapGestureRecognizer()
         view.addGestureRecognizer(tap)
         tap.cancelsTouchesInView = false
@@ -32,7 +31,7 @@ class AllCategoryViewController: UIViewController {
         loadCards()
     }
 }
-extension AllCategoryViewController: UICollectionViewDelegate,UICollectionViewDataSource {
+extension AllCategoryViewController: UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
    
     
     
@@ -57,11 +56,11 @@ extension AllCategoryViewController: UICollectionViewDelegate,UICollectionViewDa
 
     }
     func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+                           layout collectionViewLayout: UICollectionViewLayout,
+                           sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        return CGSize(width: (self.view.frame.width/3)-10, height: (self.view.frame.width/3)-10)
-    }
+           return CGSize(width: (self.view.frame.width/3)-10, height: (self.view.frame.width/3)-10)
+       }
 
     func loadCards() {
         categories = realm.objects(Category.self)

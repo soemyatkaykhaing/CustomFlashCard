@@ -39,22 +39,26 @@ class CardFormViewController: UIViewController,UIPickerViewDelegate,UIPickerView
         newCard.word = tfWord.text
         newCard.meaning = tfMeaning.text
         newCard.sentence = tvSentence.text
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "MainView") as CreateViewController
-       print(vc)
         self.save(card: newCard)
         let alert = UIAlertController(title: "New Card", message: "A New Card is added", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel) { (clear) in
-//            self.tfWord.text = ""
-//            self.tfCategory.text = ""
-//            self.tfMeaning.text = ""
-//            self.tvSentence.text = ""
+            self.tfWord.text = ""
+            self.tfCategory.text = ""
+            self.tfMeaning.text = ""
+            self.tvSentence.text = ""
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "Main") as! UITabBarController
+            let vc1 = storyboard.instantiateViewController(identifier: "MainView") as CreateViewController
+            self.present(vc, animated: true, completion: nil)
+            vc1.acard = newCard
+             NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil,userInfo: ["object":newCard])
+            vc1.acard = newCard
            
         }
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        vc.acard = newCard
-        NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil,userInfo: ["object":newCard])
+        
+//        NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil,userInfo: ["object":newCard])
     }
     
     @IBAction func backPressed(_ sender: Any) {

@@ -25,11 +25,12 @@ class PracticeCaredViewController: UIViewController{
         view = UIView()
         view.backgroundColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
         stackContainer = StackContainerView()
-        let rect = CGRect(x: 50, y: 100, width: 250, height: 40)
+        let rect = CGRect(x: 50, y: 100, width: 300, height: 40)
         lblNodata = UILabel(frame: rect)
         view.addSubview(stackContainer)
         view.addSubview(lblNodata!)
-        lblNodata!.text = "No Cards save"
+        lblNodata!.text = "There is not card saved currently"
+        lblNodata?.textColor = UIColor(named: "PupleCustom")
         configureStackContainer()
         stackContainer.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -89,6 +90,4 @@ extension PracticeCaredViewController : SwipeCardsDataSource {
     func loadCards() {
         cards = selectedCategory?.cards.sorted(byKeyPath: "word", ascending: true)
     }
-    
-    
 }

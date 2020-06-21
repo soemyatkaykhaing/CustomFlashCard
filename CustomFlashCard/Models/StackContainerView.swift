@@ -60,11 +60,9 @@ class StackContainerView: UIView, SwipeCardsDelegate {
         var cardViewFrame = bounds
         let horizontalInset = (CGFloat(index) * self.horizontalInset)
         let verticalInset = CGFloat(index) * self.verticalInset
-        
         cardViewFrame.size.width -= 2 * horizontalInset
         cardViewFrame.origin.x += horizontalInset
         cardViewFrame.origin.y += verticalInset
-        
         cardView.frame = cardViewFrame
     }
     

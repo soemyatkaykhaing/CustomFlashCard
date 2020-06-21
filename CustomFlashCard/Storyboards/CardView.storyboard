@@ -18,7 +18,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKC-cE-0jD">
                                 <rect key="frame" x="25" y="123" width="364" height="156"/>
-                                <color key="backgroundColor" name="Color2"/>
+                                <color key="backgroundColor" name="PupleCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qKC-cE-0jD" secondAttribute="height" multiplier="7:3" id="FDx-ci-RqM"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCh-nb-nRp">
                                 <rect key="frame" x="25" y="304" width="364" height="36.5"/>
-                                <color key="backgroundColor" name="Color2"/>
+                                <color key="backgroundColor" name="PupleCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="GCh-nb-nRp" secondAttribute="height" multiplier="10:1" id="PkX-zl-Shy"/>
                                 </constraints>
@@ -38,7 +38,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGf-CK-8S0">
                                 <rect key="frame" x="25" y="365.5" width="364" height="36"/>
-                                <color key="backgroundColor" name="Color2"/>
+                                <color key="backgroundColor" name="PupleCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cGf-CK-8S0" secondAttribute="height" multiplier="91:9" id="pZK-li-1vZ"/>
                                 </constraints>
@@ -63,8 +63,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqt-H8-O3X">
                                 <rect key="frame" x="25" y="664.5" width="100" height="50"/>
-                                <color key="backgroundColor" name="color1"/>
-                                <state key="normal" title="Save" image="icons8-save-20">
+                                <color key="backgroundColor" name="PupleCustom"/>
+                                <state key="normal" title="   Save" image="icons8-save-20">
                                     <color key="titleColor" name="Color4"/>
                                 </state>
                                 <connections>
@@ -73,7 +73,7 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fDM-f6-rlq">
                                 <rect key="frame" x="25" y="426.5" width="364" height="208"/>
-                                <color key="backgroundColor" name="Color2"/>
+                                <color key="backgroundColor" name="PupleCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fDM-f6-rlq" secondAttribute="height" multiplier="7:4" id="Nwg-MO-HeV"/>
                                 </constraints>
@@ -107,13 +107,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="CARD" id="gd8-hw-f4A">
                         <barButtonItem key="leftBarButtonItem" image="icons8-back-30" id="BDs-X9-YFM">
-                            <color key="tintColor" name="color1"/>
+                            <color key="tintColor" name="PupleCustom"/>
                             <connections>
                                 <action selector="pressedBackbtn:" destination="96Z-f7-KdG" id="gWV-a8-CX3"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="bYs-D0-ZAX">
-                            <color key="tintColor" name="color1"/>
+                            <color key="tintColor" name="PupleCustom"/>
                             <connections>
                                 <action selector="pressedEdit:" destination="96Z-f7-KdG" id="xdn-aU-XT9"/>
                             </connections>
@@ -141,7 +141,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="color1"/>
+                            <color key="textColor" name="PupleCustom"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" name="color1"/>
@@ -161,11 +161,14 @@
         <image name="icons8-back-30" width="30" height="30"/>
         <image name="icons8-save-20" width="20" height="20"/>
         <image name="icons8-trash-can-20.png" width="20" height="20"/>
-        <namedColor name="Color2">
-            <color red="0.50980392156862742" green="0.7686274509803922" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Color4">
             <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PupleCustom">
+            <color red="0.41568627450980394" green="0.098039215686274508" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PupleCustom">
+            <color red="0.41568627450980394" green="0.098039215686274508" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color1">
             <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

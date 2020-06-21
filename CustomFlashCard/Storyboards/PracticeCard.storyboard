@@ -20,13 +20,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Practice" id="jXs-sX-6kP">
                         <barButtonItem key="leftBarButtonItem" image="icons8-back-30" id="7yk-bX-emJ">
-                            <color key="tintColor" name="color1"/>
+                            <color key="tintColor" name="PupleCustom"/>
                             <connections>
                                 <action selector="backButton:" destination="IgN-vu-4Ay" id="UO9-XG-QYS"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Reset" id="6Hx-gh-Tgs">
-                            <color key="tintColor" name="color1"/>
+                            <color key="tintColor" name="PupleCustom"/>
                             <connections>
                                 <action selector="resetTapped:" destination="IgN-vu-4Ay" id="XtZ-Sj-DIK"/>
                             </connections>
@@ -46,7 +46,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="color1"/>
+                            <color key="textColor" name="PupleCustom"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -61,11 +61,11 @@
     </scenes>
     <resources>
         <image name="icons8-back-30" width="30" height="30"/>
-        <namedColor name="color1">
-            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="PupleCustom">
+            <color red="0.41568627450980394" green="0.098039215686274508" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="color1">
-            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="PupleCustom">
+            <color red="0.41568627450980394" green="0.098039215686274508" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

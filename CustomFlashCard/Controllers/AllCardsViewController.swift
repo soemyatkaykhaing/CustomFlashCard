@@ -13,6 +13,7 @@ class AllCardsViewController: UIViewController, UICollectionViewDelegateFlowLayo
     
     @IBOutlet weak var cardSearchBar: UISearchBar!
     var cards: Results<Card>?
+    var categories: Results<Category>?
     let realm = try! Realm()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,6 @@ class AllCardsViewController: UIViewController, UICollectionViewDelegateFlowLayo
         allCardsCollectionView.reloadData()
         self.allCardsCollectionView.delegate = self
         self.allCardsCollectionView.dataSource = self
-        allCardsCollectionView.allowsSelection = true
         let tap = UITapGestureRecognizer()
         view.addGestureRecognizer(tap)
         tap.cancelsTouchesInView = false
@@ -65,7 +65,8 @@ extension AllCardsViewController: UICollectionViewDelegate,UICollectionViewDataS
 
     
     func loadCards() {
-        cards = realm.objects(Card.self)
+        categories = realm.objects(Category.self)
+        cards = categories?.realm?.objects(Card.self)
         allCardsCollectionView.reloadData()
     }
      func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

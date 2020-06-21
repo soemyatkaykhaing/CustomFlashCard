@@ -14,17 +14,12 @@
 		FA3BCD0E24435FAE00E3747D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BCD0D24435FAE00E3747D /* AppDelegate.swift */; };
 		FA3BCD1024435FAE00E3747D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BCD0F24435FAE00E3747D /* SceneDelegate.swift */; };
 		FA3BCD1224435FAE00E3747D /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BCD1124435FAE00E3747D /* CreateViewController.swift */; };
-		FA3BCD1424435FAE00E3747D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BCD1324435FAE00E3747D /* SecondViewController.swift */; };
 		FA3BCD1724435FAE00E3747D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3BCD1524435FAE00E3747D /* Main.storyboard */; };
 		FA3BCD1C24435FB200E3747D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3BCD1B24435FB200E3747D /* Assets.xcassets */; };
 		FA3BCD1F24435FB200E3747D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3BCD1D24435FB200E3747D /* LaunchScreen.storyboard */; };
 		FA3BCD2A24435FB200E3747D /* CustomFlashCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BCD2924435FB200E3747D /* CustomFlashCardTests.swift */; };
 		FA3BCD3524435FB200E3747D /* CustomFlashCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BCD3424435FB200E3747D /* CustomFlashCardUITests.swift */; };
 		FA3BCD4324437F5300E3747D /* AddCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3BCD4224437F5300E3747D /* AddCard.storyboard */; };
-		FA4655D92479161D00640778 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4655D82479161D00640778 /* Letter.swift */; };
-		FA4655DB2479163200640778 /* SameMeaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4655DA2479163200640778 /* SameMeaning.swift */; };
-		FA4655DE247972D200640778 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4655DC247972D200640778 /* TableViewCell.swift */; };
-		FA4655DF247972D200640778 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4655DD247972D200640778 /* TableViewCell.xib */; };
 		FA4D40332463C9C4000FF130 /* CardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4D40322463C9C4000FF130 /* CardView.storyboard */; };
 		FA4D40352463DE64000FF130 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D40342463DE64000FF130 /* CardViewController.swift */; };
 		FA63597C246439480025CD2F /* WordCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63597A246439480025CD2F /* WordCardCollectionViewCell.swift */; };
@@ -32,13 +27,6 @@
 		FA77F270244F483400416200 /* AllCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77F26F244F483400416200 /* AllCardsViewController.swift */; };
 		FA77F272244F4A9B00416200 /* AllCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77F271244F4A9B00416200 /* AllCardsCell.swift */; };
 		FA77F274244F4AE500416200 /* AllCardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA77F273244F4AE500416200 /* AllCardsCell.xib */; };
-		FA7DCAA0248A459C00C860F4 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DCA9E248A459C00C860F4 /* PopUpViewController.swift */; };
-		FA7DCAA1248A459C00C860F4 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DCA9F248A459C00C860F4 /* PopUpViewController.xib */; };
-		FA7DCAA7248A8AF000C860F4 /* GroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DCAA6248A8AF000C860F4 /* GroupView.xib */; };
-		FA7DCAAC248B50C200C860F4 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DCAAA248B50C200C860F4 /* TableViewCell1.swift */; };
-		FA7DCAAD248B50C200C860F4 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DCAAB248B50C200C860F4 /* TableViewCell1.xib */; };
-		FA7DCAB0248E609F00C860F4 /* AddCardToGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DCAAE248E609F00C860F4 /* AddCardToGroupTableViewCell.swift */; };
-		FA7DCAB1248E609F00C860F4 /* AddCardToGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DCAAF248E609F00C860F4 /* AddCardToGroupTableViewCell.xib */; };
 		FAC6325B247123D500C58F9E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC63259247123D500C58F9E /* CategoryCollectionViewCell.swift */; };
 		FAC6325C247123D500C58F9E /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC6325A247123D500C58F9E /* CategoryCollectionViewCell.xib */; };
 		FAC6325E247124BF00C58F9E /* AllCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6325D247124BF00C58F9E /* AllCategoryViewController.swift */; };
@@ -87,7 +75,6 @@
 		FA3BCD0D24435FAE00E3747D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3BCD0F24435FAE00E3747D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA3BCD1124435FAE00E3747D /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
-		FA3BCD1324435FAE00E3747D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FA3BCD1624435FAE00E3747D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA3BCD1B24435FB200E3747D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3BCD1E24435FB200E3747D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,10 +86,6 @@
 		FA3BCD3424435FB200E3747D /* CustomFlashCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlashCardUITests.swift; sourceTree = "<group>"; };
 		FA3BCD3624435FB200E3747D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3BCD4224437F5300E3747D /* AddCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCard.storyboard; sourceTree = "<group>"; };
-		FA4655D82479161D00640778 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
-		FA4655DA2479163200640778 /* SameMeaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SameMeaning.swift; sourceTree = "<group>"; };
-		FA4655DC247972D200640778 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		FA4655DD247972D200640778 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FA4D40322463C9C4000FF130 /* CardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardView.storyboard; sourceTree = "<group>"; };
 		FA4D40342463DE64000FF130 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		FA63597A246439480025CD2F /* WordCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -110,13 +93,6 @@
 		FA77F26F244F483400416200 /* AllCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsViewController.swift; sourceTree = "<group>"; };
 		FA77F271244F4A9B00416200 /* AllCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCardsCell.swift; sourceTree = "<group>"; };
 		FA77F273244F4AE500416200 /* AllCardsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCardsCell.xib; sourceTree = "<group>"; };
-		FA7DCA9E248A459C00C860F4 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		FA7DCA9F248A459C00C860F4 /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
-		FA7DCAA6248A8AF000C860F4 /* GroupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupView.xib; sourceTree = "<group>"; };
-		FA7DCAAA248B50C200C860F4 /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
-		FA7DCAAB248B50C200C860F4 /* TableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
-		FA7DCAAE248E609F00C860F4 /* AddCardToGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardToGroupTableViewCell.swift; sourceTree = "<group>"; };
-		FA7DCAAF248E609F00C860F4 /* AddCardToGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCardToGroupTableViewCell.xib; sourceTree = "<group>"; };
 		FAC63259247123D500C58F9E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAC6325A247123D500C58F9E /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		FAC6325D247124BF00C58F9E /* AllCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoryViewController.swift; sourceTree = "<group>"; };
@@ -239,26 +215,15 @@
 			isa = PBXGroup;
 			children = (
 				FA3BCD1124435FAE00E3747D /* CreateViewController.swift */,
-				FA3BCD1324435FAE00E3747D /* SecondViewController.swift */,
 				FAD3606C244387E0008D16D9 /* CardFormViewController.swift */,
 				FADAECFB2449ACB800DE11E6 /* AddCategoryViewController.swift */,
 				FA77F26F244F483400416200 /* AllCardsViewController.swift */,
 				FA77F271244F4A9B00416200 /* AllCardsCell.swift */,
 				FA4D40342463DE64000FF130 /* CardViewController.swift */,
 				FA63597A246439480025CD2F /* WordCardCollectionViewCell.swift */,
-				FA63597B246439480025CD2F /* WordCardCollectionViewCell.xib */,
 				FAC63259247123D500C58F9E /* CategoryCollectionViewCell.swift */,
-				FAC6325A247123D500C58F9E /* CategoryCollectionViewCell.xib */,
 				FAC6325D247124BF00C58F9E /* AllCategoryViewController.swift */,
 				FAC6326124713A7D00C58F9E /* PracticeCardViewController.swift */,
-				FA4655DC247972D200640778 /* TableViewCell.swift */,
-				FA4655DD247972D200640778 /* TableViewCell.xib */,
-				FA7DCA9E248A459C00C860F4 /* PopUpViewController.swift */,
-				FA7DCA9F248A459C00C860F4 /* PopUpViewController.xib */,
-				FA7DCAAA248B50C200C860F4 /* TableViewCell1.swift */,
-				FA7DCAAB248B50C200C860F4 /* TableViewCell1.xib */,
-				FA7DCAAE248E609F00C860F4 /* AddCardToGroupTableViewCell.swift */,
-				FA7DCAAF248E609F00C860F4 /* AddCardToGroupTableViewCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,7 +237,8 @@
 				FA77F273244F4AE500416200 /* AllCardsCell.xib */,
 				FA4D40322463C9C4000FF130 /* CardView.storyboard */,
 				FAC6325F2471393900C58F9E /* PracticeCard.storyboard */,
-				FA7DCAA6248A8AF000C860F4 /* GroupView.xib */,
+				FAC6325A247123D500C58F9E /* CategoryCollectionViewCell.xib */,
+				FA63597B246439480025CD2F /* WordCardCollectionViewCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -299,8 +265,6 @@
 				FAC63265247153F800C58F9E /* SwipeCardDataSource.swift */,
 				FAC632672471548100C58F9E /* SwipeCardView.swift */,
 				FAC63269247154C500C58F9E /* StackContainerView.swift */,
-				FA4655D82479161D00640778 /* Letter.swift */,
-				FA4655DA2479163200640778 /* SameMeaning.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -415,21 +379,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3BCD4324437F5300E3747D /* AddCard.storyboard in Resources */,
-				FA4655DF247972D200640778 /* TableViewCell.xib in Resources */,
 				FACEE0B62445D541007E58B7 /* AddCategory.storyboard in Resources */,
 				FA3BCD1F24435FB200E3747D /* LaunchScreen.storyboard in Resources */,
 				FA2064D7247103390046D930 /* icons8-trash-can-20.png in Resources */,
-				FA7DCAAD248B50C200C860F4 /* TableViewCell1.xib in Resources */,
-				FA7DCAB1248E609F00C860F4 /* AddCardToGroupTableViewCell.xib in Resources */,
 				FA77F274244F4AE500416200 /* AllCardsCell.xib in Resources */,
-				FA7DCAA7248A8AF000C860F4 /* GroupView.xib in Resources */,
 				FA63597D246439480025CD2F /* WordCardCollectionViewCell.xib in Resources */,
 				FAC632602471393900C58F9E /* PracticeCard.storyboard in Resources */,
 				FAC6325C247123D500C58F9E /* CategoryCollectionViewCell.xib in Resources */,
 				FA3BCD1C24435FB200E3747D /* Assets.xcassets in Resources */,
 				FA4D40332463C9C4000FF130 /* CardView.storyboard in Resources */,
 				FA3BCD1724435FAE00E3747D /* Main.storyboard in Resources */,
-				FA7DCAA1248A459C00C860F4 /* PopUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,13 +518,10 @@
 			files = (
 				FADAECFC2449ACB800DE11E6 /* AddCategoryViewController.swift in Sources */,
 				FAC6326224713A7D00C58F9E /* PracticeCardViewController.swift in Sources */,
-				FA3BCD1424435FAE00E3747D /* SecondViewController.swift in Sources */,
 				FAC6326A247154C500C58F9E /* StackContainerView.swift in Sources */,
 				FAC63264247153BA00C58F9E /* CardDataModel.swift in Sources */,
 				FA3BCD1224435FAE00E3747D /* CreateViewController.swift in Sources */,
 				FADAECFA2449A85500DE11E6 /* Category.swift in Sources */,
-				FA4655D92479161D00640778 /* Letter.swift in Sources */,
-				FA4655DB2479163200640778 /* SameMeaning.swift in Sources */,
 				FA3BCD0E24435FAE00E3747D /* AppDelegate.swift in Sources */,
 				FA77F272244F4A9B00416200 /* AllCardsCell.swift in Sources */,
 				FAC6325E247124BF00C58F9E /* AllCategoryViewController.swift in Sources */,
@@ -574,11 +530,7 @@
 				FAD3606D244387E0008D16D9 /* CardFormViewController.swift in Sources */,
 				FA3BCD1024435FAE00E3747D /* SceneDelegate.swift in Sources */,
 				FA63597C246439480025CD2F /* WordCardCollectionViewCell.swift in Sources */,
-				FA4655DE247972D200640778 /* TableViewCell.swift in Sources */,
 				FA4D40352463DE64000FF130 /* CardViewController.swift in Sources */,
-				FA7DCAB0248E609F00C860F4 /* AddCardToGroupTableViewCell.swift in Sources */,
-				FA7DCAAC248B50C200C860F4 /* TableViewCell1.swift in Sources */,
-				FA7DCAA0248A459C00C860F4 /* PopUpViewController.swift in Sources */,
 				FA77F270244F483400416200 /* AllCardsViewController.swift in Sources */,
 				FADAECF82449A52900DE11E6 /* Card.swift in Sources */,
 				FAC632682471548100C58F9E /* SwipeCardView.swift in Sources */,

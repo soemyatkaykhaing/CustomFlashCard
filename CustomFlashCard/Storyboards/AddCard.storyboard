@@ -28,7 +28,7 @@
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HiO-r6-Azd">
                                 <rect key="frame" x="20" y="321" width="374" height="128"/>
-                                <color key="backgroundColor" name="Color2"/>
+                                <color key="backgroundColor" name="GreyCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="QaM-F0-uj5"/>
                                 </constraints>
@@ -38,7 +38,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0r-CF-Cqp">
                                 <rect key="frame" x="157" y="762" width="100" height="50"/>
-                                <color key="backgroundColor" name="color1"/>
+                                <color key="backgroundColor" name="PupleCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="eZH-xJ-zwj"/>
                                     <constraint firstAttribute="height" constant="50" id="zsX-tP-rEX"/>
@@ -90,7 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add A Card" id="NjC-VM-yac">
                         <barButtonItem key="leftBarButtonItem" image="icons8-back-30" style="done" id="SOL-yh-YaE">
-                            <color key="tintColor" name="color1"/>
+                            <color key="tintColor" name="PupleCustom"/>
                             <connections>
                                 <action selector="backPressed:" destination="ISo-iz-96v" id="rvQ-PK-f9D"/>
                             </connections>
@@ -116,10 +116,10 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="color1"/>
+                            <color key="textColor" name="PupleCustom"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" name="color1"/>
+                            <color key="textColor" name="PupleCustom"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -134,17 +134,17 @@
     </scenes>
     <resources>
         <image name="icons8-back-30" width="30" height="30"/>
-        <namedColor name="Color2">
-            <color red="0.50980392156862742" green="0.7686274509803922" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Color4">
             <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="color1">
-            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="GreyCustom">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="color1">
-            <color red="0.73725490196078436" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="PupleCustom">
+            <color red="0.41568627450980394" green="0.098039215686274508" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PupleCustom">
+            <color red="0.41568627450980394" green="0.098039215686274508" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

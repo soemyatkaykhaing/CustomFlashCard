@@ -23,11 +23,11 @@
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bll-b1-d8f">
                                 <rect key="frame" x="22.5" y="48" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="tvBackground"/>
+                        <color key="backgroundColor" name="PupleCustom"/>
                         <constraints>
                             <constraint firstItem="bll-b1-d8f" firstAttribute="centerY" secondItem="EBg-ug-P0P" secondAttribute="centerY" id="aTr-F9-Tiq"/>
                             <constraint firstItem="bll-b1-d8f" firstAttribute="centerX" secondItem="EBg-ug-P0P" secondAttribute="centerX" id="tqs-pu-tLJ"/>
@@ -49,8 +49,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="tvBackground">
-            <color red="0.44600000977516174" green="0.53600001335144043" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        <namedColor name="PupleCustom">
+            <color red="0.41568627450980394" green="0.098039215686274508" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
